@@ -29,6 +29,10 @@
               <input type="text" name="task" placeholder="add task here">
               <input type="submit" value"assign task">
             </form>
+            <form action="/people/{{this.id}}/tasks/create" method="DELETE" style="display: inline">
+              <name="delete">
+              <input type="submit" value"delete task">
+            </form>
           </li>
         {{/if}}
 

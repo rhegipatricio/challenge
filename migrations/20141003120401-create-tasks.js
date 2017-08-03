@@ -21,5 +21,9 @@ module.exports = {
   down: function(queryInterface, Sequelize) {
     return queryInterface
       .dropTable('tasks');
+  }, 
+  destroy: function(queryInterface, Sequelize) {
+    return queryInterface
+      .deleteTasks('tasks');
   }
 };
